@@ -37,6 +37,8 @@ const profile = {
   about: "AI Developer with 3+ years of experience building real-time RAG applications, combining strong Python skills with Streamlit for seamless end-to-end solutions. Proven track record in deploying scalable generative AI systems with robust retrieval pipelines",
   github: "https://github.com/itsbilyatt",
   linkedin: "https://www.linkedin.com/in/prajyot-birajdar-1b09a1173/",
+  resume: "https://profile.indeed.com/p/prajyotb-v613559", // Add your resume URL here
+  medium: "https://medium.com/@prajyotbirajadar1998", // Add your Medium profile URL here
   skills: ["Python", "Generative AI", "Prompt Engineering", "Retrieval-Augmented Generation (RAG)", "Agentic AI", "LLM-powered development", "Web scraping", "Data Scraping", "BeautifulSoup", "Regular Expressions", "FastAPI", "REST API development", "Vector database", "Pinecone", "LangChain", "LangChain-cohere", "Ollama", "DeepSeek 1.5B", "Ada-002 Embedding Model", "Docker", "AWS S3", "CI/CD", "TeamCity", "Git", "Bitbucket", "Jira", "Google Colab", "Jupyter Notebook", "VS Code", "PyCharm", "Postman", "Linux", "Pandas", "Streamlit", "SearchAssist (Kore.AI product)"]
 };
 
@@ -46,6 +48,8 @@ window.onload = function() {
   document.getElementById('about').textContent = profile.about;
   document.getElementById('github-link').href = profile.github;
   document.getElementById('linkedin-link').href = profile.linkedin;
+  document.getElementById('resume-link').href = profile.resume;
+  document.getElementById('medium-link').href = profile.medium;
 
   // Skills
   const skillsList = document.getElementById('skills-list');

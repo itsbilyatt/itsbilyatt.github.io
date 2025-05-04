@@ -29,19 +29,27 @@ body {
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
 .social-links a {
   display: inline-block;
-  margin: 0 0.5rem;
-  color: #fff;
-  background: #222;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  background: linear-gradient(135deg, #f5d020 0%, #f53803 100%);
+  color: white;
   text-decoration: none;
+  border-radius: 25px;
   font-weight: 500;
-  transition: background 0.2s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .social-links a:hover {
-  background: #f53803;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(245, 56, 3, 0.3);
 }
 .skills {
   margin-top: 1.5rem;
