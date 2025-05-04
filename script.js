@@ -1,3 +1,36 @@
+// Visitor Counter Functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const visitorCountElement = document.getElementById('visitor-count');
+  
+  // Get the current count from localStorage or initialize it to 10000
+  let count = localStorage.getItem('visitorCount');
+  if (!count) {
+    count = 10000;
+  } else {
+    count = parseInt(count) + 1;
+  }
+  
+  // Save the new count
+  localStorage.setItem('visitorCount', count);
+  
+  // Update the display with a simple animation
+  let currentCount = 10000;
+  const targetCount = count;
+  const duration = 1000; // 1 second animation
+  const steps = 20;
+  const increment = (targetCount - 10000) / steps;
+  const interval = duration / steps;
+  
+  const counter = setInterval(() => {
+    currentCount += increment;
+    if (currentCount >= targetCount) {
+      clearInterval(counter);
+      currentCount = targetCount;
+    }
+    visitorCountElement.textContent = Math.floor(currentCount).toLocaleString();
+  }, interval);
+});
+
 // Profile data (customize as needed)
 const profile = {
   name: "Prajyot Birajdar",
